@@ -1,0 +1,130 @@
+.photos {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.photos__section {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+.photos__list {
+  @include reset-list;
+}
+
+.photos__item {
+  display: none;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &--fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+
+.photos__figure {
+  margin: 0;
+  position: relative;
+}
+
+.photos__img {
+  width: 100%;
+}
+
+.photos__caption {
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 6px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.photos__button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url(/img/icons/arrow.png);
+  background-position: 50%;
+  background-size: 32px 32px;
+
+  &--previous {
+    left: 4px;
+    transform: rotate(-90deg);
+  }
+
+  &--next {
+    right: 4px;
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:focus,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos {
+    padding-bottom: 0;
+  }
+  .photos__section {
+    padding-bottom: 60px;
+    &:not(:last-child) {
+      margin: 0;
+      border-bottom: 2px solid #e6e6e6;
+    }
+  }
+
+  .photos__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .photos__caption {
+    padding: 35px 0;
+    font-size: 40px;
+    line-height: 46px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .photos__button {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+  }
+}
+
+
+
+
+
+
+

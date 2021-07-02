@@ -1,0 +1,14 @@
+.social-list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list__icon {
+    width: 44px;
+    height: 24px;
+  }
+}

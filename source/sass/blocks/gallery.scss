@@ -1,0 +1,142 @@
+.gallery {
+  padding: 20px 0;
+  position: relative;
+}
+
+.gallery__title {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+.gallery__slider {
+  @include reset-list;
+}
+
+.gallery__slider-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &--fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+
+.gallery__slider-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.gallery__slider-link {
+  display: block;
+}
+
+.gallery__slider-figure {
+  margin: 0;
+  position: relative;
+}
+
+.gallery__slider-img {
+  width: 100%;
+}
+
+
+.gallery__slider-caption {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 6px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*
+.gallery__slider-caption {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 6px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+*/
+
+.gallery__button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url(/img/icons/arrow.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+
+  &--previous {
+    left: 4px;
+    transform: rotate(-90deg);
+  }
+
+  &--next {
+    right: 4px;
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:focus,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding: 50px 0;
+  }
+
+  .gallery__title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .gallery__slider-item:not(:first-child) {
+    margin-top: 35px;
+  }
+
+  .gallery__slider-img {
+    width: 100%;
+  }
+
+  .gallery__slider-caption {
+    padding: 35px 0;
+    font-size: 40px;
+    line-height: 46px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .gallery__button {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+  }
+}

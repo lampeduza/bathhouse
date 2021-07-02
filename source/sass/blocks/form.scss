@@ -1,0 +1,155 @@
+.form {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form__question {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 17px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__input,
+.form__area {
+  font-family: "Oswald","Arial",sans-serif;
+  color: #444444;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  outline: 1px solid #e6e6e6;
+  border: 0;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  transition-duration: .2s;
+  transition-property: outline;
+
+  &::placeholder {
+    color: #444444;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid #444444;
+  }
+}
+
+/*
+.form__input {
+  &--error {
+    outline: 2px solid #ff8282;
+  }
+}
+*/
+
+.form__area {
+  min-height: 150px;
+  resize: vertical;
+  letter-spacing: -.03px;
+}
+
+.form__button {
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  border: 0;
+  background-color: #68b738;
+  font-family: "Oswald","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 0;
+  }
+
+  .form__question {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 40px 0;
+  }
+
+  .form__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:last-child .form__label {
+      align-self: flex-start;
+      margin-top: 14px;
+    }
+  }
+
+  .form__input,
+  .form__area {
+    font-size: 17px;
+    line-height: 19px;
+    padding: 12px 10px;
+    outline: 2px solid #e6e6e6;
+  }
+
+  .form__label {
+    width: 13%;
+    margin: 0 1% 0 0;
+  }
+
+  .form__button {
+    width: 45%;
+    margin: 40px 0 40px auto;
+    padding: 14px 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

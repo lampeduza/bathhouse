@@ -1,0 +1,35 @@
+.price {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price__table {
+  &:not(:nth-of-type(2)) {
+    margin-bottom: 30px;
+  }
+}
+
+.price__sale {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding-bottom: 60px;
+  }
+
+  .price__table:not(:nth-last-child(2)) {
+    margin-bottom: 80px;
+  }
+
+  .price__title {
+    margin: 30px 0;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .price__sale {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
