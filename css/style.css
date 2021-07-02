@@ -437,7 +437,11 @@ img {
   .photos__button {
     width: 48px;
     height: 48px;
-    background-size: 48px 48px; } }
+    background-size: 48px 48px; }
+    .photos__button--previous {
+      left: 10px; }
+    .photos__button--next {
+      right: 10px; } }
 
 .gallery {
   padding: 20px 0;
@@ -549,7 +553,11 @@ img {
   .gallery__button {
     width: 48px;
     height: 48px;
-    background-size: 48px 48px; } }
+    background-size: 48px 48px; }
+    .gallery__button--previous {
+      left: 10px; }
+    .gallery__button--next {
+      right: 10px; } }
 
 .table {
   width: 100%;
