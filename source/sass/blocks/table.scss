@@ -53,3 +53,20 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .table__row {
+    border-bottom: 4px solid #e6e6e6;
+  }
+
+  .table__cell {
+    position: relative;
+  }
+
+  .table__cell-important {
+    position: absolute;
+    font-size: 18px;
+    top: 4px;
+    left: -9px;
+  }
+}

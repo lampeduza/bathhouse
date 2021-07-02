@@ -6,9 +6,28 @@
   order: 1;
 }
 
+.social-list__icon {
+
+  &:hover,
+  &:focus {
+    fill: #73b74a;
+  }
+
+  &:active {
+    fill: #73b74a;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social-list__icon {
     width: 44px;
     height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    align-items: flex-start;
   }
 }

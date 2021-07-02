@@ -70,7 +70,7 @@
   }
 
   .navigation__link {
-    padding: 20px 0;
+    padding: 20px;
     font-size: 24px;
     line-height: 28px;
 
@@ -122,3 +122,67 @@
     line-height: 26px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    position: static;
+    margin: 0;
+    margin-left: auto;
+    width: 60%;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    border: 0;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .navigation__item {
+    margin-left: 4%;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  .navigation__link {
+    padding: 0;
+  }
+
+  .navigation__row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .navigation__social-list {
+    order: 1;
+    margin: 0;
+  }
+
+  .navigation__contacts-list {
+    display: flex;
+    width: 50%;
+  }
+
+  .navigation__contacts-item {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+

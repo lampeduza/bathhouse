@@ -85,3 +85,57 @@
     background-size: 40px 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: static;
+    padding: 30px 0;
+
+    &--opened .header__toggle,
+    &--opened .navigation {
+      display: none;
+    }
+  }
+
+  .header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__top {
+    width: 30%;
+    align-items: flex-start;
+    position: relative;
+    top: -25px;
+  }
+
+  .header__picture {
+    display: block;
+  }
+
+  .header__logo {
+    width: 100%;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

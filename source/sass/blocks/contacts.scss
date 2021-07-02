@@ -57,3 +57,27 @@
     line-height: 34px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: auto;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
+
+  .contacts__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__link {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 5px;
+  }
+}
