@@ -1057,7 +1057,7 @@ img {
   display: block;
   padding: 10px 10px;
   border: 0;
-  background-color: #68b738;
+  background-color: #5181b8;
   font-family: "Oswald","Arial",sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -1065,9 +1065,8 @@ img {
   text-align: center;
   text-transform: uppercase; }
   .form__button:hover, .form__button:focus {
-    background-color: #5eaa2f; }
+    background-color: #F68634; }
   .form__button:active {
-    background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3); }
 
 @media (min-width: 768px) {
