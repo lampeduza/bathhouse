@@ -20,8 +20,12 @@
   margin-bottom: 8px;
 
   &--map {
-    margin: 0 -10px 10px -10px;
+    margin: 0 -10px 15px -10px;
   }
+}
+
+.description__map {
+  width: 100%
 }
 
 .description__image {
@@ -72,8 +76,11 @@
     padding-bottom: 50px;
   }
 
-  .description__picture--map {
-    margin: 0 -30px 10px -30px;
+  .description__picture {
+
+    &--map {
+      margin: 0;
+    }
   }
 
   .description__text {
