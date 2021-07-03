@@ -156,12 +156,12 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .header__top {
-    width: 30%;
+    width: 40%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     position: relative;
-    top: -25px; }
+    top: -40px; }
   .header__picture {
     display: block; }
   .header__logo {
