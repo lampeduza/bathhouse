@@ -21,7 +21,29 @@
 
 .navigation__social-list {
   @include reset-list;
-  margin: 15px 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.navigation__social-item {
+  margin-right: 3%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__social-link {
+  width: 20px;
+  height: 20px;
+  display: block;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
 }
 
 .navigation__link {
@@ -49,7 +71,7 @@
 
 .navigation__caption {
   margin: 0 0 3px 0;
-  color: #68b738;
+  color: #5181b8;
 }
 
 .navigation__number-link {
@@ -74,6 +96,7 @@
     font-size: 24px;
     line-height: 28px;
 
+    /*
     &:hover,
     &:focus {
       color: #68b738;
@@ -82,6 +105,8 @@
     &:active {
       opacity: 0.7;
     }
+
+    */
   }
 
   .navigation__row {
@@ -92,12 +117,40 @@
   }
 
   .navigation__social-list {
-    margin-right: 30px;
+    margin-right: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 115px;
   }
 
-  .navigation__social-icon {
+  .navigation__social-item {
+    margin-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .navigation__social-link {
     width: 44px;
-    height: 24px;
+    height: 22px;
+    display: block;
+
+    .navigation__social-icon {
+      width: 44px;
+      height: 22px;
+    }
+
+    &--ok {
+      width: 40px;
+      height: 40px;
+
+      .navigation__social-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
   }
 
   .navigation__contacts-item {
@@ -130,6 +183,7 @@
     background-color: transparent;
     position: static;
     margin: 0;
+    padding: 0;
     margin-left: auto;
     width: 60%;
   }
@@ -139,7 +193,7 @@
     justify-content: flex-end;
     border: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .navigation__item {
@@ -157,13 +211,25 @@
   .navigation__row {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
   }
 
   .navigation__social-list {
-    order: 1;
-    margin: 0;
+    order: 0;
+    margin: 0 5% 0 0;
+    height: auto;
+    width: 15%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navigation__social-item {
+    margin-right: 10%;
+
+    &:lasnt-child {
+      margin-right: 0;
+    }
   }
 
   .navigation__contacts-list {

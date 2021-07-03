@@ -130,7 +130,49 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .photos__section {
+    padding-bottom: 80px;
+  }
 
+  .photos__title {
+    margin-left: 180px;
+    margin-top: 60px;
+  }
+
+  .photos__list {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .photos__caption {
+    padding: 16px 0;
+    font-size: 36px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photos__picture {
+    display: block;
+  }
+
+  .photos__button {
+    width: 64px;
+    height: 64px;
+    background-size: 64px;
+    top: 45%;
+
+    &--previous {
+      left: 200px;
+    }
+
+    &--next {
+      right: 200px;
+    }
+  }
+}
 
 
 

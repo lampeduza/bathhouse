@@ -60,24 +60,31 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: auto;
+    width: 40%;
   }
 
-  .contacts__list {
-    flex-direction: column;
+  .contacts__info {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
   }
 
   .contacts__item {
-    margin-bottom: 10px;
+    display: block;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-right: 0;
     }
   }
 
+  .contacts__caption {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
   .contacts__link {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 30px;
+    line-height: 36px;
     margin: 5px;
   }
 }
