@@ -69,8 +69,45 @@
   &--vk {
     width: 22px;
     height: 12px;
+
+    .navigation__social-icon {
+      fill: #5181b8;
+    }
+
+    &:hover {
+      .navigation__social-icon {
+        fill: #3b88e0;
+      }
+    }
+
+    &:focus,
+    &:active {
+      .navigation__social-icon {
+        fill: #005fcc;
+      }
+    }
+  }
+
+  &--ok {
+    .navigation__social-icon {
+      fill: #F68634;
+    }
+
+    &:hover {
+      .navigation__social-icon {
+        fill: #f97311;
+      }
+    }
+
+    &:active,
+    &:focus {
+      .navigation__social-icon {
+        fill: #ff6c00;
+      }
+    }
   }
 }
+
 
 .navigation__link {
   font-weight: 300;

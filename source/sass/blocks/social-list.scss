@@ -20,26 +20,40 @@
   width: 22px;
   height: 12px;
 
+  &--vk {
+    &:hover {
+      .social-list__icon {
+        fill: #3b88e0;
+      }
+    }
+
+    &:focus,
+    &:active {
+      .social-list__icon {
+        fill: #005fcc;
+      }
+    }
+  }
+
   &--ok {
     width: 20px;
     height: 20px;
+    fill: #F68634;
+
+    &:hover {
+      .social-list__icon {
+        fill: #f97311;
+      }
+    }
+
+    &:active,
+    &:focus {
+      .social-list__icon {
+        fill: #ff6c00;
+      }
+    }
   }
 }
-
-/*
-.social-list__icon {
-
-  &:hover,
-  &:focus {
-    fill: #73b74a;
-  }
-
-  &:active {
-    fill: #73b74a;
-    opacity: 0.3;
-  }
-}
-*/
 
 @media (min-width: $tablet-width) {
   .social-list {
