@@ -1,7 +1,7 @@
 .navigation {
   text-align: center;
   margin: 0 -10px;
-  padding: 15px 0;
+  padding: 15px 0 30px 0;
 
   display: none;
   position: absolute;
@@ -17,6 +17,22 @@
   @include reset-list;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation__item {
+  &:nth-child(even) {
+    .navigation__link:active,
+    .navigation__link:focus {
+      color: #5181b8;
+    }
+  }
+
+  &:nth-child(odd) {
+    .navigation__link:active,
+    .navigation__link:focus {
+      color: #f68634;
+    }
+  }
 }
 
 .navigation__social-list {
@@ -84,7 +100,7 @@
   .navigation {
     margin: 0 -30px;
     top: 93px;
-    padding-top: 0;
+    padding: 0;
   }
 
   .navigation__list {
