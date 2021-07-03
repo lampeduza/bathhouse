@@ -241,6 +241,12 @@
     padding: 0;
   }
 
+  .navigation__caption,
+  .navigation__link,
+  .navigation__number-link {
+    color: #ffffff;
+  }
+
   .navigation__social-list {
     order: 0;
     margin: 0 5% 0 0;
