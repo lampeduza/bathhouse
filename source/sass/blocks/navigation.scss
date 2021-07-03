@@ -224,6 +224,11 @@
 
   .navigation__item {
     margin: 0;
+    border-right: 2px solid #ffffff;
+
+    &:last-child {
+      border-right: none;
+    }
 
     &:first-child {
       margin: 0;
