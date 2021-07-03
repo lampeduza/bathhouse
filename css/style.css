@@ -465,7 +465,10 @@ img {
     padding: 0;
     margin-bottom: 50px; }
   .navigation__item {
-    margin: 0; }
+    margin: 0;
+    border-right: 2px solid #ffffff; }
+    .navigation__item:last-child {
+      border-right: none; }
     .navigation__item:first-child {
       margin: 0; }
     .navigation__item:nth-child(even) .navigation__link:active,
