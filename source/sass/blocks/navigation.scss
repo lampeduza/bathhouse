@@ -24,12 +24,22 @@
     .navigation__link:active,
     .navigation__link:focus {
       color: #5181b8;
+      opacity: 0.6;
+    }
+
+    .navigation__link:hover {
+      color: #5181b8;
     }
   }
 
   &:nth-child(odd) {
     .navigation__link:active,
     .navigation__link:focus {
+      color: #f68634;
+      opacity: 0.6;
+    }
+
+    .navigation__link:hover {
       color: #f68634;
     }
   }
