@@ -98,6 +98,8 @@
 @media (min-width: $tablet-width) {
   .form {
     padding-bottom: 0;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .form__question {
@@ -143,7 +145,55 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form {
+    max-width: 100%;
+  }
 
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    width: 32%;
+    margin-right: 2%;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .form__label {
+    width: 25%;
+
+    &--mail {
+      width: 15%;
+    }
+
+    &--subject {
+      width: 13%;
+    }
+
+    &--message {
+      width: auto;
+    }
+  }
+
+  .form__area {
+    width: 61.5%;
+  }
+
+  .form__button {
+    width: 20%;
+  }
+}
 
 
 
