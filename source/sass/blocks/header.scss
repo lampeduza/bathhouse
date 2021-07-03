@@ -2,7 +2,9 @@
   position: relative;
   width: 100%;
   padding: 15px 0 20px 0;
-  //background-image: url(../img/);
+  background-image: url(../img/mobile/bg-body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &--opened .navigation {
     display: block;
