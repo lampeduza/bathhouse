@@ -453,17 +453,15 @@ img {
     margin: 0;
     padding: 0;
     margin-left: auto;
-    width: 60%; }
+    width: 53%; }
   .navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     border: 0;
     padding: 0;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-left: auto; }
   .navigation__item {
     margin: 0;
     border-right: 2px solid #ffffff; }
@@ -472,34 +470,32 @@ img {
     .navigation__item:first-child {
       margin: 0; }
     .navigation__item:nth-child(even) .navigation__link:active,
-    .navigation__item:nth-child(even) .navigation__link:focus {
-      color: black;
-      opacity: 1; }
-    .navigation__item:nth-child(even) .navigation__link:hover {
-      color: black;
-      background-color: white; }
-    .navigation__item:nth-child(odd) .navigation__link:active,
+    .navigation__item:nth-child(even) .navigation__link:focus, .navigation__item:nth-child(odd) .navigation__link:active,
     .navigation__item:nth-child(odd) .navigation__link:focus {
-      color: black;
+      color: #000000;
+      background-color: #ffffff;
       opacity: 1; }
-    .navigation__item:nth-child(odd) .navigation__link:hover {
-      color: black;
-      background-color: white; }
+    .navigation__item:nth-child(even) .navigation__link:hover, .navigation__item:nth-child(odd) .navigation__link:hover {
+      color: #000000;
+      background-color: #ffffff; }
   .navigation__link {
-    padding: 15px 20px;
+    padding: 15px 27px;
     background-color: #000000;
     color: #ffffff; }
   .navigation__row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0; }
+    padding: 0;
+    background-color: #000000; }
+    .navigation__row:hover {
+      background-color: #ffffff; }
+      .navigation__row:hover .navigation__caption,
+      .navigation__row:hover .navigation__number-link {
+        color: #000000; }
   .navigation__caption,
   .navigation__link,
   .navigation__number-link {
@@ -508,16 +504,16 @@ img {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    margin: 0 5% 0 0;
+    margin: 0;
     height: auto;
-    width: 15%;
+    width: 20%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .navigation__social-item {
     margin-right: 10%; }
     .navigation__social-item:lasnt-child {
@@ -526,9 +522,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 55%; }
   .navigation__contacts-item {
     margin-bottom: 0;
