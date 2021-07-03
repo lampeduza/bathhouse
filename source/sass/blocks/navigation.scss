@@ -211,7 +211,7 @@
     margin: 0;
     padding: 0;
     margin-left: auto;
-    width: 60%;
+    width: 53%;
   }
 
   .navigation__list {
@@ -269,9 +269,19 @@
 
   .navigation__row {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 15px 0;
+    background-color: #000000;
+
+    &:hover {
+      background-color: #ffffff;
+
+      .navigation__caption,
+      .navigation__number-link {
+        color: #000000;
+      }
+    }
   }
 
   .navigation__caption,
