@@ -99,6 +99,7 @@
             <!-- gallery -->
             <div class="description__gallery gallery">
               <h3 class="gallery__title">Галерея изображений</h3>
+
               <ul class="gallery__slider">
                 <li class="gallery__slider-item gallery__slider-item--fade gallery__slider-item--active">
                   <a class="gallery__slider-link" href="#">
@@ -146,11 +147,11 @@
                 </li>
               </ul>
 
-              <button class="gallery__button gallery__button--previous" aria-label="Предыдущая фотография" onclick="plusSlides(-1)"></button>
-              <button class="gallery__button gallery__button--next" aria-label="Следующая фотография" onclick="plusSlides(1)"></button>
+              <button class="gallery__button gallery__button--previous" aria-label="Предыдущая фотография" onclick="minusSlide()"></button>
+              <button class="gallery__button gallery__button--next" aria-label="Следующая фотография" onclick="plusSlide()"></button>
 
               <ul class="gallery__rectangle-list rectangle-list">
-                <li class="rectangle-list__item" onclick="currentSlide(1)" tabindex="0"></li>
+                <li class="rectangle-list__item rectangle-list__item--active" onclick="currentSlide(1)" tabindex="0"></li>
                 <li class="rectangle-list__item" onclick="currentSlide(2)" tabindex="0"></li>
                 <li class="rectangle-list__item" onclick="currentSlide(3)" tabindex="0"></li>
                 <li class="rectangle-list__item" onclick="currentSlide(4)" tabindex="0"></li>
@@ -397,11 +398,11 @@
                 </li>
               </ul>
 
-              <button class="gallery__button gallery__button--previous" aria-label="Предыдущая фотография" onclick="plusSlides(-1)"></button>
-              <button class="gallery__button gallery__button--next" aria-label="Следующая фотография" onclick="plusSlides(1)"></button>
+              <button class="gallery__button gallery__button--previous" aria-label="Предыдущая фотография" onclick="minusSlide()"></button>
+              <button class="gallery__button gallery__button--next" aria-label="Следующая фотография" onclick="plusSlide()"></button>
 
               <ul class="gallery__rectangle-list rectangle-list">
-                <li class="rectangle-list__item" onclick="currentSlide(1)" tabindex="0"></li>
+                <li class="rectangle-list__item rectangle-list__item--active" onclick="currentSlide(1)" tabindex="0"></li>
                 <li class="rectangle-list__item" onclick="currentSlide(2)" tabindex="0"></li>
                 <li class="rectangle-list__item" onclick="currentSlide(3)" tabindex="0"></li>
                 <li class="rectangle-list__item" onclick="currentSlide(4)" tabindex="0"></li>
@@ -518,5 +519,6 @@
     </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
