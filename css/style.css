@@ -211,7 +211,7 @@ img {
   width: 22px;
   height: 12px; }
   .social-list__link--vk:hover .social-list__icon {
-    fill: #3b88e0; }
+    fill: #000000; }
   .social-list__link--vk:focus .social-list__icon, .social-list__link--vk:active .social-list__icon {
     fill: #005fcc; }
   .social-list__link--ok {
