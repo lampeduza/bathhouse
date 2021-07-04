@@ -915,6 +915,7 @@ img {
   .gallery__slider-item:not(:first-child) {
     margin-top: 35px; }
   .gallery__slider-img {
+    min-height: 531px;
     width: 100%; }
   .gallery__slider-caption {
     padding: 35px 0;
