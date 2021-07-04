@@ -5,11 +5,17 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
+  max-width: 670px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     padding: 30px 0;
+  }
+
+  .footer__wrapper {
+    max-width: 1100px;
   }
 }
 
@@ -21,5 +27,6 @@
   .footer__wrapper {
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 1300px;
   }
 }

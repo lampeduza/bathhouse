@@ -3,6 +3,11 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.photos__wrapper {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
 .photos__section {
   position: relative;
 
@@ -94,10 +99,17 @@
   .photos {
     padding-bottom: 0;
   }
+
+  .photos__wrapper {
+    max-width: 1100px;
+  }
+
   .photos__section {
     padding-bottom: 60px;
+    width: 80%;
+    margin: 0 auto;
+
     &:not(:last-child) {
-      margin: 0;
       border-bottom: 2px solid #e6e6e6;
     }
   }
@@ -105,7 +117,8 @@
   .photos__title {
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 30px;
+    margin: 50px 0;
+    text-align: center;
   }
   .photos__caption {
     padding: 35px 0;
@@ -131,27 +144,41 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photos__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
   .photos__section {
     padding-bottom: 80px;
+    margin: 0;
+    width: 48%;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+
+    &:not(:last-child) {
+    margin-bottom: 0;
+  }
   }
 
   .photos__title {
-    margin-left: 180px;
-    margin-top: 60px;
+    margin: 50px 0 30px 0;
+    text-align: left;
   }
 
   .photos__list {
     display: block;
-    width: 70%;
-    margin: 0 auto;
   }
 
   .photos__caption {
-    padding: 16px 0;
-    font-size: 36px;
-    line-height: 40px;
-    color: rgba(255, 255, 255, 0.4);
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    font-size: 26px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .photos__picture {
@@ -159,17 +186,17 @@
   }
 
   .photos__button {
-    width: 64px;
-    height: 64px;
-    background-size: 64px;
-    top: 45%;
+    width: 48px;
+    height: 48px;
+    background-size: 48px;
+    top: 48%;
 
     &--previous {
-      left: 200px;
+      left: 10px;
     }
 
     &--next {
-      right: 200px;
+      right: 10px;
     }
   }
 }

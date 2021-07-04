@@ -1,0 +1,16 @@
+.feedback__wrapper {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    max-width: 1300px;
+  }
+}

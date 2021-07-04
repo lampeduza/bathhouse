@@ -35,8 +35,17 @@
 .contacts__link {
   width: 100%;
   color: rgba(0, 0, 0, 0.3);
-  padding: 2px 0;
+  border-bottom: 1px solid transparent;
 
+  &:hover {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &:active,
+  &:focus {
+    border-bottom: none;
+    color: #e6e6e6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -56,6 +65,18 @@
     margin-top: 10px;
     font-size: 32px;
     line-height: 34px;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom-width: 2px;
+    }
+
+    &:active,
+    &:focus {
+      border-bottom: 2px solid rgba(153, 0, 0, 0.3);
+      outline: none;
+    }
   }
 }
 

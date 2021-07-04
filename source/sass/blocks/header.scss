@@ -27,6 +27,11 @@
   }
 }
 
+.header__wrapper {
+  max-width: 670px;
+  margin: auto;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -63,7 +68,7 @@
   .header {
     padding: 20px 0;
     border-bottom: 2px solid #e6e6e6;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &--opened {
       border: none;
@@ -76,8 +81,12 @@
     }
 
     &--opened .navigation {
-      top: 113px
+      top: 92px;
     }
+  }
+
+  .header__wrapper {
+    max-width: 1100px;
   }
 
   .header__logo {
@@ -106,6 +115,7 @@
   .header__wrapper {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1300px;
   }
 
   .header__top {

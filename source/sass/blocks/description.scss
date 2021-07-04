@@ -3,6 +3,11 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1)
 }
 
+.description__wrapper {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
 .description__column {
   padding-bottom: 50px;
 
@@ -17,7 +22,6 @@
 
 .description__location {
   position: relative;
-  margin: 0 -15px 0 -15px;
 }
 
 .description__iframe {
@@ -77,6 +81,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .description__wrapper {
+    max-width: 1100px;
+  }
+
   .description__title {
     font-size: 26px;
     line-height: 30px;
@@ -129,6 +137,10 @@
   .description {
     padding: 60px 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .description__wrapper {
+    max-width: 1300px;
   }
 
   .description__columns {
