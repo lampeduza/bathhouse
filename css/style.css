@@ -783,7 +783,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 100%; }
+    max-width: 1300px; }
   .photos__section {
     padding-bottom: 80px;
     margin: 0;
@@ -913,10 +913,7 @@ img {
     font-size: 24px;
     line-height: 26px; }
   .gallery__slider-item:not(:first-child) {
-    margin-top: 35px; }
-  .gallery__slider-img {
-    min-height: 531px;
-    width: 100%; }
+    margin: 0; }
   .gallery__slider-caption {
     padding: 35px 0;
     font-size: 40px;
