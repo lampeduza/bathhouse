@@ -13,4 +13,3 @@ var close = function () {
 
 toggle.addEventListener('click', open);
 toggle.removeEventListener('click', close);
-
