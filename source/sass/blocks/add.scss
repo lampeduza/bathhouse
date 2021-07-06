@@ -1,0 +1,70 @@
+.add {
+  padding-top: 15px;
+}
+
+.add__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.add__fieldset {
+  margin: 0;
+  padding: 20px 10px;
+  width: auto;
+}
+
+.add__field {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.add__variants,
+.add__input {
+  padding: 5px;
+  width: 100%;
+}
+
+.add__input {
+  font-size: 16px;
+}
+
+.add__caption {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.add__button {
+  width: 40%;
+  border: none;
+  padding: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .add__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .add__button {
+    padding: 15px 10px;
+  }
+
+  .add__variants,
+  .add__input {
+    padding: 10px 5px;
+  }
+
+  .add__caption {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .add__input {
+    margin-bottom: 10px;
+  }
+}
