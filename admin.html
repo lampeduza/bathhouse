@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уютная банька | Добавление фотографий в слайдер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  </head>
+  <body>
+    <main>
+      <section class="add">
+        <div class="add__wrapper container">
+        <h1 class="add__title">Добавление фотографий в слайдеры</h1>
+        <form class="add__form" action="url" method="post" enctype="multipart/form-data">
+          <fieldset class="add__fieldset">
+            <div class="add__field">
+              <label class="add__caption">Куда хотите добавить фотографию?</label>
+              <select class="add__variants" name="variants">
+                <option value="big">Баня «Большая Баня»</option>
+                <option value="key">Баня «В Ключах»</option>
+              </select>
+            </div>
+            <div class="add__field">
+              <label class="add__caption" for="upload">Загрузить фотографию</label>
+              <input class="add__upload" type="file" name="upload" id="upload">
+            </div>
+            <div class="add__field">
+              <label class="add__caption" for="caption">Введите заголовок для фотографии</label>
+              <input class="add__input" type="text" name="caption" id="caption" placeholder="Заголовок">
+            </div>
+
+            <button class="add__button" type="submit">Загрузить</button>
+          </fieldset>
+        </form>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>
